@@ -4,6 +4,14 @@
 
 /* GLOBAL STYLES */
 
+.tiledBackground {
+  background-image: url(https://www.mattpaynephotography.com/images/xl/Ocean-light.jpg);
+  background-size: 150px;
+  width: 300px;
+  height: 300px;
+  border: 2px solid;
+  color: pink;
+}
 :root {
   --font-primary: 'Poppins', sans-serif;
   --font-secondary: 'Arvo', serif;
@@ -21,14 +29,16 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: var(--bg-color);
-  display: flex;
-  flex-flow: column;
-  height: 100vh;
-  color: var(--font-color);
-  font-family: var(--font-primary);
-}
+body { /* this is the background for the website */
+  width: 100%;
+  height: 4000px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5mP5uRSqM_d1nRYd38I3JMFWkp6bDJSxANg&usqp=CAU");
+  background-color: #cccccc;
+  background-repeat: no-repeat,
+      no-repeat,
+      no-repeat;
+      background-size: 100% 100%; /* this is the width and length of the url image above */
+ }
 
 .container {
   display: flex;
@@ -42,6 +52,8 @@ body {
 
 header {
   box-shadow: var(--header-shadow);
+  background-image: url(); /* if you want an image in the header add a image to these panrentheses */
+  background-color: black; /* this is the header color */
 }
 
 header .container {
